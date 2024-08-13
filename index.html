@@ -3,39 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Assignment</title>
     <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!--Creating 10 Buttons-->
-    <section class="border border-dark rounded-5 mt-5 p-2">
+    <!-- Creating 10 Buttons -->
+    <section class="border border-dark rounded-5 m-5 p-2">
       <div class="container">
-        <div class="row g-5">
-          <div class="col-12">
-            <button class="btn btn-primary px-3">Click</button> <br /><br />
-            <button class="btn btn-outline-info py-3">Touch</button
-            ><br /><br />
-            <button class="btn w-50 btn-dark">Send</button><br /><br />
+        <div class="row g-5 justify-content-center">
+          <div class="col-12 text-center">
+            <button class="btn btn-primary px-3 mb-3">Click</button>
+            <button class="btn btn-outline-info py-3 mb-3">Touch</button>
+            <button class="btn w-50 btn-dark mb-3">Send</button>
             <button
-              class="btn btn-link border border-1 text-decoration-none mx-5"
+              class="btn btn-link border border-1 text-decoration-none mx-5 mb-3"
             >
-              Click for Details</button
-            ><br /><br />
-            <button class="btn w-25 btn-lg btn-outline-success">
-              Receive Cash</button
-            ><br /><br />
-            <button class="btn btn-light w-25">Light ON</button><br /><br />
-            <button class="btn btn-primary btn-lg" disabled>Light OFF</button
-            ><br /><br />
-            <button class="btn btn-sm btn-outline-danger" active>Click</button
-            ><br /><br />
-            <div class="btn-group btn-group-lg">
+              Click for Details
+            </button>
+            <button class="btn w-50 btn-lg btn-outline-success mb-3">
+              Receive Cash
+            </button>
+            <button class="btn btn-light w-50 mb-3">Light ON</button>
+            <button class="btn btn-primary btn-lg mb-3" disabled>
+              Light OFF
+            </button>
+            <button class="btn btn-sm btn-outline-danger mb-3">Click</button>
+            <div class="btn-group btn-group-lg mb-3">
               <button class="btn btn-outline-warning">YES</button>
               <button class="btn btn-dark">NO</button>
             </div>
-            <br /><br />
-            <div class="btn-group btn-group-vertical">
+            <div class="btn-group btn-group-vertical mb-3">
               <button class="btn btn-danger">UP</button>
               <button class="btn btn-dark">DOWN</button>
             </div>
@@ -43,6 +41,32 @@
         </div>
       </div>
     </section>
+    <!-- Card -->
+    <section class="bg-danger border border-dark rounded-5 m-5 p-5">
+      <div class="container">
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-md-8 col-lg-6 col-sm-12 col-12">
+            <div class="card text-center w-100 align-items-center p-2 bg-light">
+              <div class="card-body">
+                <h4 class="card-title">NFT Project</h4>
+                <p class="card-text">
+                  Cryptocurrencies use a decentralized system, meaning they
+                  operate independently of a central authority such as a
+                  government or financial institution.
+                </p>
+              </div>
+              <img
+                class="card-img-top"
+                src="https://mobirise.com/extensions/coinm5/nft-project/assets/images/background2.jpg"
+                alt="NFT Project"
+              />
+              <a href="#" class="btn btn-outline-dark w-50 mt-3">See Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="./js/bootstrap.bundle.js"></script>
   </body>
 </html>
