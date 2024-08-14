@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- Creating 10 Buttons -->
-    <section class="border border-dark rounded-5 m-5 p-2">
+    <section class="bg-success-subtle m-5 p-5">
       <div class="container">
         <div class="row g-5 justify-content-center">
           <div class="col-12 text-center">
@@ -160,7 +160,7 @@
               <li class="list-group-item">Middle</li>
               <li class="list-group-item disabled">Bottom</li>
             </ul>
-            <ul class="list-group list-group-flush m-5">
+            <ul class="list-group list-group-flush mb-3">
               <h5>Movie Categories</h5>
               <a
                 class="list-group-item list-group-item-action list-group-item-danger d-flex justify-content-between align-items-center"
@@ -175,18 +175,99 @@
               <a
                 class="list-group-item list-group-item-action d-flex justify-content-between align-content-center disabled"
                 href="#"
-                >English <span class="badge bg-danger rounded-pill">543</span></a
+                >English
+                <span class="badge bg-danger rounded-pill">543</span></a
               >
               <a
                 class="list-group-item list-group-item-action list-group-item-info d-flex justify-content-between align-content-center"
                 href="#"
-                >Others <span class="badge bg-danger rounded-pill">1024</span></a
+                >Others
+                <span class="badge bg-danger rounded-pill">1024</span></a
               >
             </ul>
           </div>
         </div>
       </div>
     </section>
+    <!--Navbar-->
+    <div class="container">
+      <div class="row">
+        <nav
+          class="navbar navbar-expand-lg shadow bg-dark fixed-top"
+          data-bs-theme="dark"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bloggy</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarid"
+              aria-controls="navbarid"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarid">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blogs</a>
+                </li>
+                <!--Dropdown Menu-->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Categories
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Health</a></li>
+                    <li><a class="dropdown-item" href="#">Nature</a></li>
+                    <li><a class="dropdown-item" href="#">Technology</a></li>
+                    <li><a class="dropdown-item" href="#">Education</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Random</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
     <script src="./js/bootstrap.bundle.js"></script>
   </body>
 </html>
